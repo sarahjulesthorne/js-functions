@@ -23,3 +23,21 @@ const dogBreed = (breed) => {
 return `My favorite breed of dog is ${breed}!`;
 };
 console.log(dogBreed('Great Pyrenees'));
+const dogBreedDiv = document.getElementById('dog-breed');
+console.log('dog breed div', dogBreedDiv);
+dogBreedDiv.innerHTML = dogBreed('Great Pyrenees');
+const animalDiv = document.getElementById('animal');
+animalDiv.innerHTML = nuggetizer('pig')
+const printToDom = (divId, textToPrint) => {
+const selectedDiv = document.getElementById(divId);
+selectedDiv.innerHTML += textToPrint;
+}
+printToDom('animal', nuggetizer('cucumber'));
+let bandNumber = 1;
+const addBand = (bandName) => {
+ const htmlToPrint = `<p>${bandNumber}. ${bandName}</p>`;
+ printToDom('band-list', htmlToPrint);
+ bandNumber++;
+};
+addBand('Sigur Ros');
+addBand('PNK');
