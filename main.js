@@ -23,3 +23,8 @@ const dogBreed = (breed) => {
 return `My favorite breed of dog is ${breed}!`;
 };
 console.log(dogBreed('Great Pyrenees'));
+const dogBreedDiv = document.getElementById('dog-breed');
+console.log('dog breed div', dogBreedDiv);
+dogBreedDiv.innerHTML = dogBreed('Great Pyrenees');
+const animalDiv = document.getElementById('animal');
+animalDiv.innerHTML = nuggetizer('pig')
