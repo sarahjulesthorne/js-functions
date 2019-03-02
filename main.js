@@ -14,3 +14,12 @@ namePrinter('Lillah', 'Watson');
 namePrinter('Nice', 'Person');
 namePrinter('Exactly', 'Right');
 namePrinter('Interesting', 'Idea');
+
+const nuggetizer = (animal) => {
+return `processed ${animal}`;
+};
+console.log(nuggetizer('pig'));
+const dogBreed = (breed) => {
+return `My favorite breed of dog is ${breed}!`;
+};
+console.log(dogBreed('Great Pyrenees'));
